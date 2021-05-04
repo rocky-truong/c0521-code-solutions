@@ -23,29 +23,34 @@
         </select>
       </div>
     </label>
-    <label for="languages">
+    <span>
       Favorite Language (choose one)
-      <div>
-        <input type="radio" name="language" value="html" /> HTML
-        <input type="radio" name="language" value="css" /> CSS
-        <input type="radio" name="language" value="javascript" /> JavaScript
-      </div>
-    </label>
-    <label for="information">
+    </span>
+    <div>
+      <input type="radio" name="language" value="html" />
+      <label for="HTML">HTML</label>
+      <input type="radio" name="language" value="css" />
+      <label for="CSS">CSS</label>
+      <input type="radio" name="language" value="javascript" />
+      <label for="JavaScript">JavaScript</label>
+    </div>
+    <span>
       Would you like to sign up for more information?
-      <div>
-        <input type="checkbox" name="signup" /> Sign me up!
-      </div>
-    </label>
+    </span>
+    <div>
+      <label for="signup">
+        <input type="checkbox" id ="signup" name="signup" /> Sign me up!
+      </label>
+    </div>
     <label for="comments">
       Comments
       <div>
-        <textarea name="comments" cols="25" rows="10">
+        <textarea id="comments" name="comments" cols="25" rows="10">
         </textarea>
       </div>
-      <label for="submit">
-        <input type="submit" name="submit" value="Submit" />
-      </label>
+    </label>
+    <label for="submit">
+      <input type="submit" id="submit" name="submit" value="Submit" />
     </label>
   </form>
 </body>
