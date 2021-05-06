@@ -16,10 +16,11 @@ h2 {
 .bar {
   width: 100%;
   height: 40px;
-  border-radius: 8px;
-  border-color: #adb1b0;
+  border-radius: 6px;
+  border: thin solid #d9dada;
   margin-top: 5px;
   margin-bottom: 15px;
+  padding: 10px;
 }
 
 #submit {
