@@ -19,3 +19,7 @@ img {
 .column-two-third {
   flex-basis: calc(100% / 3 * 2);
 }
+
+.column-one-fourth {
+  flex-basis: 25%;
+}
