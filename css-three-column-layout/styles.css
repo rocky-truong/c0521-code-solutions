@@ -1,0 +1,43 @@
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #1996da;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.image-container {
+  background-color: white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.column-one-third {
+  flex-basis: calc(100% / 3);
+  margin: 30px;
+}
+
+h1,
+h3 {
+  font-weight: lighter;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+}
