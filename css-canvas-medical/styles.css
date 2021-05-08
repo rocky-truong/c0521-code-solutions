@@ -39,4 +39,33 @@ p,
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 60px;
+  line-height: 0.5;
+}
+
+h3 {
+  font-weight: lighter;
+  font-size: 28px;
+}
+
+#clinicians-row {
+  flex-direction: column;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.margin-bottom {
+  margin-bottom: 0;
+}
+
+.whole-row {
+  background-color: #fafafa;
+  padding-top: 25px;
+}
+
+.location {
+  text-align: center;
+}
+
+.location-row {
+  padding-bottom: 70px;
 }
