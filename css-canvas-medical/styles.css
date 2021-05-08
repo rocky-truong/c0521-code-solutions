@@ -51,6 +51,7 @@ h3 {
   flex-direction: column;
   text-align: center;
   background-color: #fafafa;
+  padding-left: 60px;
 }
 
 .margin-bottom {
@@ -68,4 +69,9 @@ h3 {
 
 .location-row {
   padding-bottom: 70px;
+  padding-left: 60px;
+}
+
+.bold {
+  font-weight: bold;
 }
