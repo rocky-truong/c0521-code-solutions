@@ -31,7 +31,6 @@
   border-radius: 4px;
   float: right;
   margin-top: 25px;
-  margin-right: 40px;
 }
 
 h3,
@@ -93,7 +92,7 @@ h3 {
   background: #525351;
   color: white;
   padding-top: 60px;
-  padding-bottom: 160px;
+  padding-bottom: 100px;
   font-family: 'Avenir', sans-serif;
 }
 
@@ -107,9 +106,48 @@ h3 {
 .address-line {
   margin: 0;
   color: white;
+  font-size: 14px;
 }
 
 h4 {
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+#canvas-bottom {
+  width: 115px;
+  margin-top: 22px;
+  margin-bottom: 45px;
+}
+
+.nav-button {
+  text-decoration-line: none;
+  color: #c0c0c0;
+  font-family: 'Avenir', sans-serif;
+  margin-left: 24px;
+}
+
+#contact-us {
+  background-color: #294464;
+  color: white;
+  padding: 10px 15px;
+}
+
+#top-right-bar {
+  display: flex;
+  align-items: center;
+}
+
+.top-row {
+  border-style: solid;
+  border-color: #eaecef;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-width: thin;
+  padding-top: 15px;
+}
+
+#canvas-top {
+  width: 115px;
 }
