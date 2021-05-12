@@ -1,5 +1,10 @@
+.container {
+  width: 1000px;
+}
+
 .row {
   display: flex;
+  padding-left: 60px;
 }
 
 .column-half {
@@ -19,14 +24,14 @@
 }
 
 #get-started {
-  padding: 12px 40px;
+  padding: 18px 45px;
   background-color: #294464;
   color: white;
   text-decoration-line: none;
   border-radius: 4px;
   float: right;
   margin-top: 25px;
-  margin-right: 60px;
+  margin-right: 40px;
 }
 
 h3,
@@ -51,7 +56,6 @@ h3 {
   flex-direction: column;
   text-align: center;
   background-color: #fafafa;
-  padding-left: 60px;
 }
 
 .margin-bottom {
@@ -65,13 +69,47 @@ h3 {
 
 .location {
   text-align: center;
+  margin-top: 25px;
 }
 
 .location-row {
   padding-bottom: 70px;
-  padding-left: 60px;
+  padding-top: 45px;
 }
 
-.bold {
-  font-weight: bold;
+#clinician {
+  width: 400px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.column-one-fourth {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+}
+
+.address-row {
+  background: #525351;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 160px;
+  font-family: 'Avenir', sans-serif;
+}
+
+.company-button,
+.product-button {
+  color: white;
+  text-decoration-line: none;
+  line-height: 35px;
+}
+
+.address-line {
+  margin: 0;
+  color: white;
+}
+
+h4 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
