@@ -123,20 +123,21 @@ h4 {
   text-decoration-line: none;
   color: #c0c0c0;
   font-family: 'Avenir', sans-serif;
-  margin-left: 24px;
+  margin-left: 28px;
 }
 
 #contact-us {
   background-color: #294464;
   color: white;
-  padding: 7px 12px;
   border-radius: 4px;
+  padding: 10px;
 }
 
 #top-right-bar {
   display: flex;
-  align-items: center;
+  justify-self: center;
   font-size: 14px;
+  align-items: center;
 }
 
 .top-row {
@@ -147,6 +148,7 @@ h4 {
   border-top: 0;
   border-width: thin;
   padding-bottom: 10px;
+  margin-top: 15px;
 }
 
 #canvas-top {
@@ -155,4 +157,49 @@ h4 {
 
 #top-left-bar {
   display: flex;
+}
+
+.hero {
+  width: 94%;
+  position: absolute;
+  opacity: 0.85;
+  height: 470px;
+}
+
+.hero-row {
+  display: flex;
+  position: relative;
+  margin-bottom: 530px;
+  margin-top: 60px;
+}
+
+.get-button {
+  position: absolute;
+  left: 120px;
+  top: 400px;
+  background-color: #2a4464;
+  color: white;
+  border-radius: 4px;
+  padding: 14px 40px;
+  border: 1px solid #2a4464;
+}
+
+.hero-p {
+  position: absolute;
+  color: white;
+  top: 140px;
+  left: 120px;
+  width: 520px;
+  line-height: 1.75;
+  font-family: 'Avenir', sans-serif;
+}
+
+.hero-head {
+  position: absolute;
+  color: white;
+  top: 30px;
+  left: 120px;
+  width: 450px;
+  font-size: 36px;
+  font-weight: lighter;
 }
