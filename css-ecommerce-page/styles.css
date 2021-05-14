@@ -1,0 +1,43 @@
+.container {
+  width: 1000px;
+  margin: auto;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.top-row {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.main-row {
+  display: flex;
+  font-size: 12px;
+}
+
+.column-one-fifth {
+  flex-basis: 20%;
+  margin-right: 20px;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  background-color: white;
+  color: #dbdbdb;
+}
+
+.price {
+  background-color: #fff2e7;
+}
+
+.size {
+  color: #dbdbdb;
+}
