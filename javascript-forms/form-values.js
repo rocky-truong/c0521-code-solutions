@@ -8,6 +8,7 @@ function handleSubmit(event) {
     message: $form.elements.message.value
   };
   console.log('messageData:', messageData);
+  $form.reset();
 }
 
 $form.addEventListener('submit', handleSubmit);
