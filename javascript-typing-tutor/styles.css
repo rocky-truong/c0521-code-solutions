@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+span.correct {
+  color: #19cd1c;
+}
+
+span.incorrect {
+  color: #f80e0b;
+}
+
+span {
+  margin-right: 0.1em;
+}
+
+span.current {
+  text-decoration: underline;
+}
