@@ -5,7 +5,6 @@
 
 .row {
   display: flex;
-  padding-left: 60px;
 }
 
 .column-half {
@@ -21,7 +20,6 @@
   background-color: #fafafa;
   padding-top: 35px;
   padding-bottom: 35px;
-  padding-left: 60px;
 }
 
 #get-started {
@@ -161,46 +159,52 @@ h4 {
 }
 
 .hero {
-  width: 94%;
+  width: 100%;
   position: absolute;
   opacity: 0.85;
-  height: 470px;
-}
-
-.hero-row {
-  display: flex;
-  position: relative;
-  margin-bottom: 530px;
-  margin-top: 60px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .get-button {
-  position: absolute;
-  left: 120px;
-  top: 400px;
   background-color: #2a4464;
   color: white;
   border-radius: 4px;
   padding: 14px 40px;
   border: 1px solid #2a4464;
+  position: relative;
+  left: 50px;
+  top: 20px;
 }
 
 .hero-p {
-  position: absolute;
   color: white;
-  top: 140px;
-  left: 120px;
   width: 520px;
   line-height: 1.75;
   font-family: 'Avenir', sans-serif;
+  position: relative;
+  left: 50px;
+  top: 15px;
 }
 
 .hero-head {
-  position: absolute;
   color: white;
-  top: 30px;
-  left: 120px;
   width: 450px;
   font-size: 36px;
   font-weight: lighter;
+  position: relative;
+  top: 30px;
+  left: 50px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.hero-row {
+  height: 470px;
+  position: relative;
+  margin-top: 70px;
+  padding-left: 0;
+  margin-bottom: 70px;
 }
