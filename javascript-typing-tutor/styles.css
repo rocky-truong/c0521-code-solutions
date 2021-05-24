@@ -16,7 +16,7 @@ span.correct {
 }
 
 span.incorrect {
-  color: #f80e0b;
+  border-bottom: red 3px solid;
 }
 
 span {
@@ -24,5 +24,5 @@ span {
 }
 
 span.current {
-  text-decoration: underline;
+  border-bottom: black 3px solid;
 }
