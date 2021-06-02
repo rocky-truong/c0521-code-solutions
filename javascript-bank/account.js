@@ -23,10 +23,15 @@ Account.prototype.withdraw = function (amount) {
   }
 };
 
-// Account.prototype.getBalance = function () {
-//   var totalDeposit = 0;
-//   var totalWithdrawals = 0;
-//   for (var i = 0; i < this.transactions.length; i++) {
-//     if ()
-//   }
-// };
+Account.prototype.getBalance = function () {
+  var totalDeposit = 0;
+  var totalWithdrawals = 0;
+  for (var i = 0; i < this.transactions.length; i++) {
+    if (this.transactions[i].type === 'deposit') {
+      totalDeposit += this.transactions[i].amount;
+    } else if (this.transactions[i].type === 'withdrawal') {
+      totalWithdrawals += this.transactions[i].amount;
+    }
+  }
+  return totalDeposit - totalWithdrawals;
+};
