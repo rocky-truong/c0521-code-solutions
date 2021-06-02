@@ -1,15 +1,14 @@
 var $h1 = document.querySelector('h1');
-var timerId = 3;
-
-setInterval(countDown, 1000);
-
+var timerId = null;
+var count = 4;
 function countDown() {
-  if (timerId === 0) {
+  count--;
+  if (count > 0) {
+    $h1.textContent = count;
+  } else {
     $h1.textContent = '~Earth Beeeelooowww Us~';
-    return;
+    clearInterval(timerId);
   }
-  $h1.textContent = timerId;
-  timerId--;
 }
 
-clearInterval(5);
+timerId = setInterval(countDown, 1000);
