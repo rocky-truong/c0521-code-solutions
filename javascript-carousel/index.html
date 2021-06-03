@@ -11,75 +11,31 @@
 </head>
 <body>
   <div class="container">
-    <div class="view">
-      <div class="main-row center">
-        <button><i class="fas fa-chevron-left fa-4x"></i></button>
+    <div class="main-row center">
+      <button><i class="fas fa-chevron-left fa-4x"></i></button>
+      <div class="view" data-view="1">
         <img src="images/001.png" alt="bulbasaur">
-        <button><i class="fas fa-chevron-right fa-4x"></i></button>
       </div>
-      <div class="row center">
-        <button><i class="fas fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-      </div>
-    </div>
-    <div class="view hidden">
-      <div class="main-row center">
-        <button><i class="fas fa-chevron-left fa-4x"></i></button>
+      <div class="view hidden" data-view="2">
         <img src="images/004.png" alt="charmander">
-        <button><i class="fas fa-chevron-right fa-4x"></i></button>
       </div>
-      <div class="row center">
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="fas fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-      </div>
-    </div>
-    <div class="view hidden">
-      <div class="main-row center">
-        <button><i class="fas fa-chevron-left fa-4x"></i></button>
+      <div class="view hidden" data-view="3">
         <img src="images/007.png" alt="squirtle">
-        <button><i class="fas fa-chevron-right fa-4x"></i></button>
       </div>
-      <div class="row center">
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="fas fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-      </div>
-    </div>
-    <div class="view hidden">
-      <div class="main-row center">
-        <button><i class="fas fa-chevron-left fa-4x"></i></button>
+      <div class="view hidden" data-view="4">
         <img src="images/025.png" alt="pikachu">
-        <button><i class="fas fa-chevron-right fa-4x"></i></button>
       </div>
-      <div class="row center">
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="fas fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-      </div>
-    </div>
-    <div class="view hidden">
-      <div class="main-row center">
-        <button><i class="fas fa-chevron-left fa-4x"></i></button>
+      <div class="view hidden" data-view="5">
         <img src="images/039.png" alt="jigglypuff">
-        <button><i class="fas fa-chevron-right fa-4x"></i></button>
       </div>
-      <div class="row center">
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="far fa-circle fa-lg"></i></button>
-        <button><i class="fas fa-circle fa-lg"></i></button>
-      </div>
+      <button><i class="fas fa-chevron-right fa-4x"></i></button>
+    </div>
+    <div class="row center">
+      <button><i class="dotView fas fa-circle fa-lg" data-view="1" id="1"></i></button>
+      <button><i class="dotView far fa-circle fa-lg" data-view="2" id="2"></i></button>
+      <button><i class="dotView far fa-circle fa-lg" data-view="3" id="3"></i></button>
+      <button><i class="dotView far fa-circle fa-lg" data-view="4" id="4"></i></button>
+      <button><i class="dotView far fa-circle fa-lg" data-view="5" id="5"></i></button>
     </div>
   </div>
   <script src="main.js"></script>
