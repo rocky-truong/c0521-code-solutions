@@ -1,0 +1,28 @@
+.container {
+  width: 1000px;
+  margin: auto;
+  border: 4px solid black;
+  padding-bottom: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: white;
+  border: none;
+}
+
+button:active {
+  transform: translate(0, 0.25rem);
+}
+
+.center {
+  text-align: center;
+}
+
+.main-row {
+  display: flex;
+  justify-content: space-between;
+}
