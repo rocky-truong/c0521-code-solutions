@@ -43,8 +43,7 @@ function handleLeft(event) {
 
   currentView = newView;
   clearInterval(timerId);
-  setInterval(handleRight, 3000);
-  console.log('it works');
+  timerId = setInterval(handleRight, 3000);
 }
 
 function handleRight(event) {
@@ -72,8 +71,7 @@ function handleRight(event) {
 
   currentView = newView;
   clearInterval(timerId);
-  setInterval(handleRight, 3000);
-  console.log('it works');
+  timerId = setInterval(handleRight, 3000);
 }
 
 function handleDot1(event) {
@@ -95,8 +93,7 @@ function handleDot1(event) {
 
   currentView = newView;
   clearInterval(timerId);
-  setInterval(handleRight, 3000);
-  console.log('it works');
+  timerId = setInterval(handleRight, 3000);
 }
 
 function handleDot2(event) {
@@ -117,8 +114,7 @@ function handleDot2(event) {
   }
 
   currentView = newView; clearInterval(timerId);
-  setInterval(handleRight, 3000);
-  console.log('it works');
+  timerId = setInterval(handleRight, 3000);
 }
 
 function handleDot3(event) {
@@ -140,8 +136,7 @@ function handleDot3(event) {
 
   currentView = newView;
   clearInterval(timerId);
-  setInterval(handleRight, 3000);
-  console.log('it works');
+  timerId = setInterval(handleRight, 3000);
 }
 
 function handleDot4(event) {
@@ -163,8 +158,7 @@ function handleDot4(event) {
 
   currentView = newView;
   clearInterval(timerId);
-  setInterval(handleRight, 3000);
-  console.log('it works');
+  timerId = setInterval(handleRight, 3000);
 }
 
 function handleDot5(event) {
@@ -186,6 +180,5 @@ function handleDot5(event) {
 
   currentView = newView;
   clearInterval(timerId);
-  setInterval(handleRight, 3000);
-  console.log('it works');
+  timerId = setInterval(handleRight, 3000);
 }
