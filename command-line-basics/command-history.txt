@@ -1,0 +1,281 @@
+    1  exit
+    2  whoami
+    3  git config --global --list
+    4  git config --global user.name "Rocky Truong"
+    5  git config --global user.email "Rockytruong19@gmail.com"
+    6  git config --global --list
+    7  exit
+    8  cd repos
+    9  cd c0521-code-solutions/
+   10  code .
+   11  git status
+   12  code .
+   13  git status
+   14  git checkout javascript-carousel 
+   15  git status
+   16  git add javascript-carousel
+   17  git commit -m "Completed javascript-carousel."
+   18  git push origin javascript-carousel
+   19  git checkout master
+   20  git pull origin master
+   21  cd ~
+   22  git status
+   23  cd ~ ls
+   24  ls
+   25  git status
+   26  cd repos
+   27  cd c0521-code-solutions/
+   28  git checkout -b  http-messages
+   29  git status
+   30  cd http-messages
+   31  git status
+   32  http http://example.com
+   33  http http://www.example.com
+   34  http --verbose http://www.example.com
+   35  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+   36  http --body GET http://example.com > index.html
+   37  git status 
+   38  git add http-messages
+   39  git status
+   40  git add .
+   41  git status
+   42  git commit -m "Completed http-messages."
+   43  git push origin http-messages
+   44  git status
+   45  git checkout master
+   46  cd ~
+   47  cd repos
+   48  cd c0521-code-solutions/
+   49  git status
+   50  git pull origin master
+   51  git status
+   52  git checkout -b javascript-ajax
+   53  cd javascript-ajax
+   54  git status
+   55  git add .
+   56  git status
+   57  git commit -m "Completed javascript-ajax."
+   58  git push origin javascript-ajax
+   59  git checkout master
+   60  cd ~
+   61  cd repos
+   62  cd c0521-code-solutions/
+   63  git status
+   64  cd javascript-ajax
+   65  git status
+   66  cd ..
+   67  cd c0521-code-solutions/
+   68  cd javascript-ajax
+   69  git checkout javascript-ajax
+   70  cd javascript-ajax
+   71  cd ..
+   72  git checkout master
+   73  git pull origin master
+   74  git status
+   75  git checkout javascript-carousel
+   76  git status
+   77  git add .
+   78  git commit -m "In progress." --no-verify
+   79  git push origin javascript-carousel
+   80  git checkout master
+   81  git status
+   82  git checkout javascript-carousel
+   83  git checkout master
+   84  git status
+   85  git restore javascript-ajax/users.js
+   86  git status
+   87  git restore .
+   88  git status
+   89  git checkout javascript-carousel
+   90  git checkout master
+   91  git status
+   92  git restore .
+   93  git status
+   94  git checkout master
+   95  cd ~
+   96  cd repos
+   97  git clone git@github.com:rocky-truong/ajax-project.git
+   98  cd ajax-project
+   99  npm ci
+  100  git checkout -b issue-1-search-a-pokemon
+  101  git status
+  102  git add .
+  103  git status
+  104  git commit -m "Added a 'div[data-view="search-pokemon"]' to the HTML. #1"
+  105  git push origin issue-1-search-a-pokemon
+  106  git status
+  107  git add .
+  108  git commit -m "Created a top nav bar with the search button. #1"
+  109  git push origin issue-1-search-a-pokemon
+  110  git status
+  111  git add .
+  112  git commit -m "Have search button listen for 'click' event to open search bar. #1"
+  113  git push origin issue-1-search-a-pokemon
+  114  git status
+  115  git add .
+  116  git commit -m "Ensure the search bar looks nice on both mobile-sized and desktop-sized screens. #1"
+  117  git push origin issue-1-search-a-pokemon
+  118  git status
+  119  git add css/styles.css index.html
+  120  git status
+  121  git commit -m "Add an empty unordered list to the 'div[data-view="search"]' element in the HTML. #1"
+  122  git push origin issue-1-search-a-pokemon
+  123  git status
+  124  git add css/layout.css css/styles.css index.html
+  125  git status
+  126  git commit -m "Ensure dummy results look nice on both mobile-sized and desktop-sized screens. #1"
+  127  git push origin issue-1-search-a-pokemon
+  128  git status
+  129  git add .
+  130  git status
+  131  git commit -m "Commented out code that can be used for feature 5 later. #1"
+  132  git push origin issue-1-search-a-pokemon
+  133  git status
+  134  git add index.html
+  135  git commit -m "Add an empty unordered list to the 'div[data-view="view"]' element in the HTML.
+  136  git commit -m "Add an empty unordered list to the 'div[data-view="view"]' element in the HTML. #1"
+  137  git status
+  138  git commit -m "Add an empty unordered list to the 'div[data-view="view"]' element in the HTML.
+  139  git status
+  140  git commit -m "Add an empty unordered list to the 'div[data-view="view"]' element in the HTML.
+  141  git status
+  142  git commit -m "Add an empty unordered list to the 'div[data-view="view"]' element in the HTML. #1"
+  143  git push origin issue-1-search-a-pokemon
+  144  git status
+  145  git add .
+  146  git commit -m "Add a dummy pokemon to the unordered list in HTML and style them to match the wireframe. #1"
+  147  git push origin issue-1-search-a-pokemon
+  148  git status
+  149  git add .
+  150  git commit -m "Ensure dummy pokemon looks nice on both mobile-sized and desktop-sized screens. #1"
+  151  git push origin issue-1-search-a-pokemon
+  152  git status
+  153  git add index.html js/main.js
+  154  git status
+  155  git commit -m "Remove dummy pokemon from HTML. #1"
+  156  git push origin issue-1-search-a-pokemon
+  157  git status
+  158  git add css/styles.css index.html js/main.js
+  159  git status
+  160  git commit -m "Show error message if Pokemon can't be found. #1"
+  161  git push origin issue-1-search-a-pokemon
+  162  git status
+  163  git add css/styles.css
+  164  git status
+  165  git commit -m "Make sure that all click targets show a cursor: pointer when hovered with the mouse. #1"
+  166  git push origin issue-1-search-a-pokemon
+  167  git status
+  168  git add css/styles.css
+  169  git status
+  170  git commit -m "Clean up for feature 1 is complete. #1"
+  171  git push origin issue-1-search-a-pokemon
+  172  git status
+  173  git add css/layout.css css/styles.css index.html
+  174  git status
+  175  git commit -m "Removed all commented out code. #1"
+  176  git push origin issue-1-search-a-pokemon
+  177  git checkout master
+  178  git pull origin master
+  179  git checkout -b issue-2-view-evolution-tree
+  180  git status
+  181  exirt
+  182  exit
+  183  cd repos
+  184  cd c0521-code-solutions/[B
+  185  cd ~
+  186  cd repos
+  187  ;ls
+  188  ls
+  189  cd ajax-project/
+  190  git status
+  191  git add js/data.js js/main.js
+  192  git status
+  193  git commit -m "Able to populate first pokemon for Evolution Chart thru a callback function. #2"
+  194  git commit -m "Able to populate first pokemon for Evolution Chart thru a callback function. #2" --no-verify
+  195  git push origin issue-2-view-evolution-tree
+  196  git status
+  197  git add js/data.js js/main.js
+  198  git status
+  199  git commit -m "In progress. #2"
+  200  git commit -m "In progress. #2" --no-verify
+  201  git push origin issue-2-view-evolution-tree
+  202  git status
+  203  exit
+  204  cd repos/
+  205  cd c0521-code-solutions/
+  206  man cat
+  207  cat laziness.txt impatience.txt hubris.txt
+  208  cat laziness.txt
+  209  git status
+  210  man cat
+  211  pwd
+  212  cd command-line-basics/
+  213  cat laziness.txt
+  214  cat laziness.txt impatience.txt hubris.txt
+  215  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  216  cat laziness.txt impatience.txt three-virtues.ttx
+  217  cat laziness.txt impatience.txt three-virtues.txt
+  218  man ls
+  219  ls
+  220  ls -a
+  221  man ls
+  222  ls -a
+  223  ls -F
+  224  man ls
+  225  ls lfz-staff/
+  226  ls lfz-staff/ -a
+  227  ls lfz-staff/ -F
+  228  ls -aF lfz-staff > lfz-staff/contents.txt
+  229  cat lfz-staff/contents.txt
+  230  man pwd
+  231  pwd
+  232  pwd > i-was-here.txt
+  233  ls
+  234  cat i-was-here.txt
+  235  man echo
+  236  echo 'Hello, World!'
+  237  echo 'Hello, World!' > hello.txt
+  238  ls
+  239  cat hello.txt
+  240  man touch
+  241  touch tag-youre-it.txt
+  242  ls
+  243  touch boop.txt > snoot/
+  244  man touch
+  245  touch snoot/ boop.txt
+  246  ls
+  247  touch snoot/boop.txt
+  248  ls snoot/
+  249  man mkdir
+  250  mkdir parent
+  251  ls
+  252  ls parent/
+  253  ls
+  254  mkdir -p parent/child/grandchild
+  255  ls
+  256  man mkdir
+  257  touch parent/child/grandchild
+  258  ls -a parent/child/grandchild.
+  259  ls -a parent/child/grandchild
+  260  ls -a parent/child/grandchild/.gitkeep
+  261  touch parent/child/grandchild/.gitkeep
+  262  ls -a parent/child/grandchild
+  263  man mv
+  264  mv pokiemans pokemon
+  265  ls
+  266  man rm
+  267  rm lol.txxt
+  268  rm lol.txt
+  269  ls
+  270  rm -r kill-me/
+  271  ls
+  272  man cp
+  273  cp and-then.txt
+  274  man cp
+  275  cp and-then.txt no-and-then.txt
+  276  ls
+  277  cat and-then.txt
+  278  cat no-and-then.txt
+  279  man history
+  280  history
+  281  history > command-history.txt
