@@ -41,6 +41,8 @@ const balance = deposits - withdrawals;
 
 console.log('balance: ', balance);
 
-// const returnedAssign = Object.assign()
-
-// const composite = traits.reduce(())
+const composite = traits.reduce((pokemon, attribute) => {
+  Object.assign(pokemon, attribute);
+  return pokemon;
+}, {});
+console.log(composite);
