@@ -1,0 +1,49 @@
+.hot-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.hot-button:active {
+  transform: translate(0, 0.25rem);
+}
+
+.hot-button.cold {
+  background-color: #351c74;
+  color: white;
+}
+
+.hot-button.cool {
+  background-color: #674ea7;
+  color: white;
+}
+
+.hot-button.tepid {
+  background-color: #e06666;
+  color: white;
+}
+
+.hot-button.warm {
+  background-color: #f6b26a;
+  color: black;
+}
+
+.hot-button.hot {
+  background-color: #ff0;
+  color: black;
+}
+
+.hot-button.nuclear {
+  background-color: white;
+  color: black;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 500px;
+  height: 94vh;
+}
