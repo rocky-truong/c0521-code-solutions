@@ -1,0 +1,100 @@
+1. User can sign up.
+
+The auth.jsx page handles what the user initially sees when they visit the page.
+The variable welcomeMessage has a logic to check if the route.path is currently on
+"sign-in". Depending on what the route.path is, the WelcomeMessage will be chosen to
+display "please sign in" or "create an account".
+
+The navbar.jsx helps display two buttons: 'Sign In' and 'Sign Up'. Both are clickable to
+change the option when at the welcome page. The Navbar component has some logic to
+check if the user is null or not null, and then will return the appropriate buttons.
+
+The auth-form.jsx holds all the event listeners for the sign up page. There are two
+handle functions. One is for the user input to update as its being entered. The second
+handler is for the register button when the user is done entering their desired
+credentials. If the handleChange is triggered, the setState also updates the current
+state. Each time the event listener occurs, the render method takes place after to
+re render the page. After the render (and re render), the method returns the react
+element form which is created along with all the react elements within form. When the
+handleSubmit is called, the if statement checks for if the action is for the "sign
+up" or the "sign in". If it was "sign up", the window.hash is set to "sign in" to allow
+the user to sign in with their new credentials.
+
+The index.js takes care of the requests for the "sign up" which uses the post method
+with the /api/auth/sign-up path. There is logic that checks if there is an input for both
+username and password. If either are missing, the client will see an error message
+saying "username and password are required fields". Afterwards, the argon2.hash method
+is called to hash the password. The variable params holds the username, along with the
+hashedPassword only. If there are no errors from entering the new credentials into the
+database, the server sends a 201 status code.
+
+The redirect.jsx will help with the handleSubmit function from auth-form.jsx. Redirect.jsx
+will help with the window.hash for the sign-in page after the account creation is
+completed and the server has sent a 201 status code. After the fetch function
+(in auth-form.jsx) returns the window.location.hash for "sign in", the render method
+(in auth-form.jsx) is ran again. The variables alternateActionHref, alternatActionText,
+and submitButtonText are all pointed to sign in/log in now to display the sign in feature.
+
+2. User can sign in.
+
+Similar to the sign up feature, there is going to be the same layout UI layout for
+the sign in page. The key differences on the front end are the WelcomeMessages,
+alternateActionText, and the submit button.
+
+The navbar.jsx will display 'Sign In' and 'Sign Up' since the user has still not logged in.
+The logic in the Navbar component will be null since user isn't authenticated yet.
+
+The auth.jsx page checks for if the route.path is 'sign-in', which then displays the
+appropriate WelcomeMessage.
+
+The auth-form.jsx is still utilizing the two handle functions for the sign in as well.
+The handleChange function is constantly updating the state every time there is an
+input from the user within the username or password form, which also triggers a
+re render as well. The handleSubmit function will process the event a little differently
+than the sign up feature. HandleSubmit will check if result.user AND result.token are both
+truthy values. If either of these are false, then the sign in attempt will be rejected.
+At this point, the form will auto reset and the welcomeMessage will still display
+"Please sign in to continue".
+
+The index.js takes in requests for the post method with the /api/auth/sign-in path.
+The logic here checks the username and password, and returns 'invalid login'
+if either are falsy. Afterwards, the sql selects the columns 'userId' and 'hashedPassword'
+compare the given credentials to what is saved on the database from the initial sign up.
+The argon2.verify is used to check if the hashed password matches the hashed password
+that was saved on the database. If the request password hashed doesn't match with
+the one on the database, the sign in request will be rejected.
+
+The redirect.jsx will help with the window.hash for the sign in if everything is
+successful. The home.jsx will render the next page to display the gif. If the context.user
+is falsy, the redirect.jsx will bring the user back to the sign in screen to try again.
+At this point, the user can try to sign in again or create a new account if they forgot
+their old one.
+
+3. User can stay signed in (even if they refresh the page).
+
+User can refresh or close the page while they are logged in and will still return to
+the signed in page with the gif. This is possible with the componentDidMount function
+within the app.jsx file. The localStorage.getItem method is used to check the localStorage
+for if a token already exists. If there is an existing token, it is decoded using the
+decodeToken and stored in the user variable after. The setState will run after to update
+the state which will help the render function decide if it should display the sign in
+or the home page with the gif. The render function will trigger the contextValue which has
+handleSignIn and handleSignOut. The contextValue has a child that will call the renderPage
+method which will check what path is currently set to which determines if the React element
+Home or Auth gets returned.
+
+The home.jsx runs after to display the needed page for when the user returns to the page
+whether it was refreshed or close. This will render the containing div for the gif and its
+style as well.
+
+4. User can sign out.
+
+The navbar.jsx will use the Navbar component to check if the user isn't null to display the
+Sign out button. This button has an event listener that will trigger the handleSignOut
+function from app.jsx.
+
+The handleSignOut function will remove the JWT from the localStorage and also update
+the state of the user to null. Then the render function will run again which will trigger
+the callback function renderPage. The renderPage will check what the current route is
+which will be set to the 'sign-in' and the React element Auth will be returned. This will
+ultimately bring the user back to the original welcome page.
