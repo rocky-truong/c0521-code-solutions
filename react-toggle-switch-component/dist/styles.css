@@ -1,0 +1,63 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 500px;
+  height: 94vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+button {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+}
+
+.button-on {
+  background-color: #6aa74f;
+}
+
+.oval {
+  width: 40px;
+  height: 20px;
+  position: relative;
+}
+
+.button-off {
+  background-color: #e2e2e2;
+}
+
+.circle-on {
+  width: 20px;
+  height: 19px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  background-color: white;
+  position: absolute;
+  left: 25px;
+}
+
+.circle-off {
+  width: 20px;
+  height: 19px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  background-color: white;
+  position: absolute;
+  right: 25px;
+}
+
+span {
+  padding-left: 20px;
+}
