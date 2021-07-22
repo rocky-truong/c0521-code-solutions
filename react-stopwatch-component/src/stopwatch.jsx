@@ -1,5 +1,4 @@
 import React from 'react';
-let timerId = null;
 class Stopwatch extends React.Component {
   constructor(props) {
     super(props);
@@ -17,7 +16,7 @@ class Stopwatch extends React.Component {
         isTicking: true,
         counter: this.state.counter
       });
-      timerId = setInterval(() => {
+      this.timerId = setInterval(() => {
         this.setState({
           isTicking: true,
           counter: (this.state.counter + 1)
@@ -28,7 +27,7 @@ class Stopwatch extends React.Component {
         isTicking: false,
         counter: this.state.counter
       });
-      clearInterval(timerId);
+      clearInterval(this.timerId);
     }
   }
 
