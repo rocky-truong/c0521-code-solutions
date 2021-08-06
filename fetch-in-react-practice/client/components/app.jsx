@@ -21,8 +21,8 @@ export default class App extends React.Component {
      */
     fetch('/api/todos', { method: 'GET' })
       .then(response => response.json())
-      .then(todos => this.setState({
-        todos
+      .then(task => this.setState({
+        todos: task
       }));
   }
 
@@ -43,14 +43,13 @@ export default class App extends React.Component {
     */
     fetch('/api/todos', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newTodo)
     })
       .then(response => response.json())
       .then(newTodo => this.setState({
-        todos: this.state.todos.concat(newTodo)
+        todos: this.state.todos.concat(newTodo),
+        isCompleted: false
       }));
   }
 
@@ -72,6 +71,21 @@ export default class App extends React.Component {
      * TIP: Be sure to SERIALIZE the updates in the body with JSON.stringify()
      * And specify the "Content-Type" header as "application/json"
      */
+    const todos = this.state.todos.concat();
+    const index = todos.findIndex(task => task.todoId === todoId);
+    const opposite = {
+      isCompleted: !todos[index].isCompleted
+    };
+    fetch(`api/todos/${todoId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(opposite)
+    })
+      .then(response => response.json())
+      .then(task => {
+        todos.splice(index, 1, task);
+        this.setState({ todos: todos });
+      });
   }
 
   render() {
