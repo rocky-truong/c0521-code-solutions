@@ -1,18 +1,16 @@
 /* exported get2ndFromTop */
 
 function get2ndFromTop(stack) {
-  if (!stack.peek()) {
+  if (stack.peek() === undefined) {
     return undefined;
   }
   const firstFromTop = stack.pop();
-  let secondFromTop = null;
-  if (!stack.peek()) {
+  if (stack.peek() === undefined) {
     stack.push(firstFromTop);
     return undefined;
   }
-  if (stack.peek()) {
-    secondFromTop = stack.peek();
-  }
+  const secondFromTop = stack.pop();
+  stack.push(secondFromTop);
   stack.push(firstFromTop);
   return secondFromTop;
 }
