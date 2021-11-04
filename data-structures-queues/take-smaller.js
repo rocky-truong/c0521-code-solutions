@@ -1,21 +1,24 @@
 /* exported takeSmaller */
 
 function takeSmaller(queue) {
-  const first = queue.dequeue();
-  const second = queue.dequeue();
-  if (second === undefined) {
-    return first;
+  if (queue.peek() === undefined) {
+    return undefined;
   }
-  if (first > second) {
-    queue.enqueue(first);
-    return second;
+  const firstValue = queue.dequeue();
+  if (queue.peek() === undefined) {
+    return firstValue;
   }
-  if (first === second) {
-    queue.enqueue(second);
-    return first;
+  const secondValue = queue.dequeue();
+  if (firstValue > secondValue) {
+    queue.enqueue(firstValue);
+    return secondValue;
   }
-  if (first < second) {
-    queue.enqueue(second);
-    return first;
+  if (secondValue > firstValue) {
+    queue.enqueue(secondValue);
+    return firstValue;
+  }
+  if (firstValue === secondValue) {
+    queue.enqueue(firstValue);
+    return secondValue;
   }
 }

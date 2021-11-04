@@ -1,9 +1,8 @@
 /* exported isEmpty */
 
 function isEmpty(queue) {
-  const first = queue.peek();
-  if (first === undefined) {
-    return true;
+  if (queue.peek() !== undefined) {
+    return false;
   }
-  return false;
+  return true;
 }

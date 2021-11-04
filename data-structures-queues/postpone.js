@@ -1,10 +1,9 @@
 /* exported postpone */
 
 function postpone(queue) {
-  const front = queue.peek();
-  if (front === undefined) {
+  if (queue.peek() === undefined) {
     return;
   }
-  const sentToBack = queue.dequeue();
-  queue.enqueue(sentToBack);
+  const frontValue = queue.dequeue();
+  queue.enqueue(frontValue);
 }
